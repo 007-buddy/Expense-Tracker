@@ -30,6 +30,8 @@ const App = () => {
           <Route path="/dashboard" element={<Home />} />
           <Route path="/income" element={<Income />} />
           <Route path="/expense" element={<Expense />} />
+          {/* Add fallback to avoid client-side unknown-route errors */}
+          <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </Router>
     </div>
