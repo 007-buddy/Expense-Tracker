@@ -40,7 +40,7 @@ try{
 
   // get total expense for last 30 days
     const expenseLast30Days= last30DaysExpenseTransactions.reduce((sum, transaction) => sum + transaction.amount, 0);
-    console.log("last 30 days transactions : ", expenseLast30Days);
+    // console.log("last 30 days transactions : ", expenseLast30Days);
     
     // fetch last 5  transactions (income + expense)
 

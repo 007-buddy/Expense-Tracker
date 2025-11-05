@@ -1,5 +1,5 @@
 // Vercel serverless function to respond at the project root (GET /)
-module.exports = (req, res) => {
+export default (req, res) => {
   // Basic CORS handling
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
