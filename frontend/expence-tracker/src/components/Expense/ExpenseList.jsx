@@ -32,4 +32,3 @@ onDelete={()=>onDelete(expense._id)}
 }
 
 export default ExpenseList
-

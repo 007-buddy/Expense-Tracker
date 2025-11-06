@@ -1,5 +1,3 @@
-
-
 import React, { useContext } from "react";
 import { SIDE_MENU_DATA } from "../../utils/data";
 import { UserContext } from "../../context/UserContext";
@@ -77,4 +75,3 @@ const SideMenu = ({ activeMenu }) => {
 };
 
 export default SideMenu;
-// ...existing code...

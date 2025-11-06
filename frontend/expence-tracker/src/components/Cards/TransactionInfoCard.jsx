@@ -207,6 +207,3 @@ const TransactionInfoCard = ({
 };
 
 export default TransactionInfoCard;
-
-
-

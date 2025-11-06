@@ -1,4 +1,3 @@
-// ...existing code...
 import React, { useState } from "react";
 import { HiOutlineMenu, HiOutlineX } from "react-icons/hi";
 import SideMenu from "./SideMenu";
@@ -32,4 +31,3 @@ const Navbar = ({ activeMenu }) => {
 };
 
 export default Navbar;
-// ...existing code...

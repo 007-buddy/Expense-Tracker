@@ -1,4 +1,3 @@
-// // ...existing code...
 import React, { useContext } from "react";
 import Navbar from "./Navbar";
 // use the exact filename of your context file (userContext.jsx)
@@ -25,4 +24,3 @@ const DashboardLayout = ({ children, activeMenu }) => {
 };
 
 export default DashboardLayout;
-// // ...existing code...
