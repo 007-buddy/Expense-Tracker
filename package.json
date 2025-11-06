@@ -3,7 +3,9 @@
   "private": true,
   "version": "1.0.0",
   "scripts": {
-    "build": "cd frontend/expence-tracker && npm ci && npm run build"
+    "build": "cd frontend/expence-tracker && npm ci && npm run build",
+    "preinstall": "npm config set optional false",
+    "start": "npx serve -s frontend/expence-tracker/dist"
   },
   "engines": {
     "node": "18.x"
