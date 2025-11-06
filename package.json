@@ -1,4 +1,13 @@
 {
+  "name": "finance-tracker-root",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "build": "cd frontend/expence-tracker && npm ci && npm run build"
+  },
+  "engines": {
+    "node": "18.x"
+  },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.13",
     "bcryptjs": "^3.0.2",
