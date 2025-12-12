@@ -1,4 +1,4 @@
-export const BASE_URL="https://expense-tracker-ditk.vercel.app/";
+export const BASE_URL="https://expense-tracker-ditk.vercel.app";
 
 // utils/apiPaths.js
 export const API_PATHS = {
