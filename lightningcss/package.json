@@ -1,0 +1,6 @@
+{
+  "name": "lightningcss",
+  "version": "1.30.2",
+  "private": true,
+  "main": "node/index.js"
+}

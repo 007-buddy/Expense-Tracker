@@ -3,15 +3,13 @@
   "private": true,
   "version": "1.0.0",
   "scripts": {
-    "build": "cd frontend/expence-tracker && npm install && npm run build",
-    "preinstall": "npm config set optional false",
+    "build": "cd frontend/expence-tracker && npm install --omit=optional --no-audit --no-fund && npm run build",
     "start": "npx serve -s frontend/expence-tracker/dist"
   },
-  "engines": {
-    "node": "18.x"
-  },
   "dependencies": {
-    "@tailwindcss/vite": "^4.1.13",
+    "@rollup/rollup-win32-x64-msvc": "^4.53.1",
+    "@tailwindcss/vite": "^4.1.17",
+    "@vitejs/plugin-react": "^5.1.0",
     "bcryptjs": "^3.0.2",
     "cors": "^2.8.5",
     "dotenv": "^17.2.3",
@@ -19,7 +17,11 @@
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.18.3",
     "multer": "^2.0.2",
-    "tailwindcss": "^4.1.13",
+    "tailwindcss": "^4.1.17",
+    "vite": "^7.2.2",
     "xlsx": "^0.18.5"
+  },
+  "engines": {
+    "node": ">=20.19.0"
   }
 }

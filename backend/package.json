@@ -1,14 +1,6 @@
 {
   "name": "expense-tracker-backend",
-  "private": true,
   "version": "1.0.0",
-  "scripts": {
-    "build": "cd ../frontend/expence-tracker && npm ci --no-audit --no-fund && npm run build",
-    "start": "node index.js"
-  },
-  "engines": {
-    "node": "18.x"
-  },
   "description": "",
   "main": "server.js",
   "scripts": {
