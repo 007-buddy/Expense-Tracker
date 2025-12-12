@@ -1,6 +1,6 @@
 [build]
 base = "frontend/expence-tracker"
-command = "npm install --omit=optional --no-audit --no-fund && npm run build"
+command = "npm ci && npm run build"
 publish = "dist"
 
 [env]
