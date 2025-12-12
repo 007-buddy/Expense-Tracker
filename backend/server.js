@@ -34,6 +34,9 @@ connectDB();
 // });
 
 // FIXED: Corrected route path from /api/vl/auth to /api/v1/auth
+app.use("/", (req, res)=>{
+    res.send("API is running....");
+})
 app.use("/api/v1/auth", authRoutes);
 app.use("/api/v1/income", incomeRoutes);
 app.use("/api/v1/expense", expenseRoutes);
