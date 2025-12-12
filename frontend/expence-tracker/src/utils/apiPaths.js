@@ -1,4 +1,4 @@
-export const BASE_URL="https://YOUR_BACKEND_URL_HERE.vercel.app"; // Replace with your actual backend Vercel URL
+export const BASE_URL="https://expense-tracker-ditk.vercel.app"; // Replace with your actual backend Vercel URL
 
 // utils/apiPaths.js
 export const API_PATHS = {
