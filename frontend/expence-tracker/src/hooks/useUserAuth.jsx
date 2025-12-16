@@ -10,13 +10,23 @@ export const useUserAuth = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
+    const token = localStorage.getItem("token");
+    
+    // If no token, user is not logged in
+    if (!token) {
+      clearUser();
+      navigate("/login");
+      return;
+    }
+
+    // If user already exists in context, skip fetching
     if (user) return;
 
     let isMounted = true;
 
     const fetchUserInfo = async () => {
       try {
-        const response = await axiosInstance.get(API_PATHS.AUTH.GET_USER_INFO);
+        const response = await axiosInstance.get(API_PATHS.AUTH.GET_USER);
         if (isMounted && response.data) {
           updateUser(response.data);
         }
@@ -34,5 +44,5 @@ export const useUserAuth = () => {
     return () => {
       isMounted = false;
     };
-  }, [updateUser, clearUser, navigate]);
+  }, [user, updateUser, clearUser, navigate]);
 };
